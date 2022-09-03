@@ -2,6 +2,8 @@
 Arduino Crashcourse - Zero to Hero - IoT
 Repository for the Arduino Crashcourse - Zero to Hero - IoT
 
+<b>[Slides in Danish](https://raw.githubusercontent.com/iakop/ArduinoCrashcourseIoT/master/Slides/Arduino-Crashcourse-Iot.pdf)</b>
+
 ## Schedule:
 <b>16:00-17:30:</b> Arduino Basics </br>
 - Digital I/O:
@@ -13,17 +15,21 @@ Repository for the Arduino Crashcourse - Zero to Hero - IoT
 - Analog I/O:
 	- Analog LED
 	- Servo
-</br><b>17:30-18:00:</b> Setup ESP32 on Arduino </br>
+
+<b>17:30-18:00:</b> Setup ESP32 on Arduino </br>
 - Board Definitions
 - Libraries and Tools
-</br><b>18:00-18:30:</b> Dinner - Pizza and softdrinks </br>
-</br><b>18:30-19:45:</b> IoT on ESP32 </br>
+
+<b>18:00-18:30:</b> Dinner - Pizza and softdrinks </br>
+
+<b>18:30-19:45:</b> IoT on ESP32 </br>
 - IoT basics:
 	- ESP32 Webserver
 - ESP32 LED server:
 	- HTML/Javascript site
 	- Server code
-</br><b>19:45-20:00:</b> Summary, evaluation, and thanks for now! </br>
+
+<b>19:45-20:00:</b> Summary, evaluation, and thanks for now! </br>
 
 ## Examples quick reference:
 ### Arduino Basics
