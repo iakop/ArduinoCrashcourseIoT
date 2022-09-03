@@ -5,7 +5,7 @@ Repository for the Arduino Crashcourse - Zero to Hero - IoT
 <b>[Slides in Danish](https://raw.githubusercontent.com/iakop/ArduinoCrashcourseIoT/master/Slides/Arduino-Crashcourse-Iot.pdf)</b>
 
 Everything we'll go over can fit on a single breadboard:
-<img src="/Fritzing/8-Everything_breadboard.svg" alt="Everything" height="300px">
+</br><img src="/Fritzing/8-Everything_breadboard.svg" alt="Everything" height="300px">
 
 ## Schedule:
 <b>16:00-17:30:</b> Arduino Basics </br>
