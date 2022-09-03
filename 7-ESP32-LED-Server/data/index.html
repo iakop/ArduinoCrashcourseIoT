@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		LED control
+	</title>
+</head>
+<style type="text/css" media="screen">
+body{
+	font-family: sans-serif;
+	color:#FFFFFF;
+	font-size: xxx-large;
+	background-color:#347894;
+	text-align: center;
+}
+
+.slider {
+	width: 80%;
+	height: 45px;
+	border-radius: 15px;
+	background: #04224b;
+	outline: none;
+}
+
+.slider::-webkit-slider-thumb{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background: #60c6d6;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background: #60c6d6;
+	cursor: pointer;
+}
+</style>
+<body>
+	<h1> My Led Control </h1>
+	<div>
+		<input type="range" min="0" max="255" value="0" class="slider" id="levelslider">
+	</div>
+	<div>
+		Level: <span id="level">0</span>
+	</div>
+<script>
+// Establish gateway on the host, that the browser connects to
+var gateway = `ws://${window.location.hostname}/ws`;
+// Create WebSocket object "connection"
+var connection = new WebSocket(gateway);
+
+// Define what happens on websocket events
+connection.onopen = function () {
+	console.log("Connected to server on: ", gateway);
+};
+connection.onclose = function() {
+	console.log("Disconnected from server on: ", gateway);
+};
+connection.onmessage = function (msg) {
+	console.log("Server: ", msg.data);
+};
+connection.onerror = function (error) {
+	console.log("WebSocket Error ", error);
+	alert("WebSocket Error ", error);
+};
+
+var levelslider = document.getElementById("levelslider");
+var level = document.getElementById("level");
+
+levelslider.oninput = function () {
+	level.innerHTML = this.value;
+	connection.send(this.value);
+}
+</script>
+</body>
+</html>
