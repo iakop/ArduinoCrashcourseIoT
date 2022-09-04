@@ -2,7 +2,8 @@
 Arduino Crashcourse - Zero to Hero - IoT
 Repository for the Arduino Crashcourse - Zero to Hero - IoT
 
-<b>[Slides in Danish](https://raw.githubusercontent.com/iakop/ArduinoCrashcourseIoT/master/Slides/Arduino-Crashcourse-Iot.pdf)</b>
+<b>[Slides in Danish](https://raw.githubusercontent.com/iakop/ArduinoCrashcourseIoT/master/Slides/Arduino-Crashcourse-Iot-Danish.pdf)</b></br>
+<b>[Slides in English](https://raw.githubusercontent.com/iakop/ArduinoCrashcourseIoT/master/Slides/Arduino-Crashcourse-Iot-English.pdf)</b>
 
 Everything we'll go over can fit on a single breadboard:
 </br><img src="/Fritzing/8-Everything_breadboard.svg" alt="Everything" height="300px">
